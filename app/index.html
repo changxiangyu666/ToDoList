@@ -5,6 +5,28 @@
     <title>Title</title>
 </head>
 <body>
-    <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+<header>
+    <section>
+        <form action="javascript:postaction()" id="form">
+            <label for="title">ToDoList</label>
+            <input type="text" id="title" name="title" placeholder="添加ToDo" required="required" autocomplete="off">
+        </form>
+    </section>
+</header>
+<section>
+    <h2 onclick="save()">正在进行 <span id="todocount">1</span></h2>
+    <ol id="todolist" class="demo-box">
+        <li draggable="true"><input type="checkbox" onchange="update(0,&quot;done&quot;,true)">
+            <p id="p-0" onclick="edit(0)">wrwrt</p><a href="javascript:remove(0)">-</a></li>
+    </ol>
+    <h2>已经完成 <span id="donecount">0</span></h2>
+    <ul id="donelist"></ul>
+</section>
+<footer>
+    Copyright © 2014 todolist.cn <a href="javascript:clear();">clear</a>
+</footer>
+<script type="text/javascript" src="index.js"></script>
+
+<script type="text/javascript" src="bundle.js" charset="utf-8"></script>
 </body>
 </html>

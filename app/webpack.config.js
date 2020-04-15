@@ -14,6 +14,6 @@ module.exports = {
         ]
     },
     plugins:[
-        new webpack.BannerPlugin('²ËÄñ½Ì³Ì webpack ÊµÀý')
+        new webpack.BannerPlugin('./index.html')
     ]
 };
